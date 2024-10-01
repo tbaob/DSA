@@ -1,4 +1,4 @@
-Disclaimer
+# Disclaimer
 
 This GitHub repository is created solely for the purpose of **storing data** and **utilizing ChatGPT** in various tasks related to code generation, debugging, and data management. The content, including code, scripts, or any other material present in this repository, is primarily generated or influenced by interactions with ChatGPT, and should be treated as such.
 

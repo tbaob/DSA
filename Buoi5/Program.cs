@@ -20,16 +20,7 @@ namespace k1enn
             // Kiểm tra hàm MaxSubString()
             Console.WriteLine("\nKiểm tra hàm MaxSubString():");
             MyList maxSubString = list.MaxSubString(); // Gọi hàm MaxSubString()
-
-            if (maxSubString.Count > 0)
-            {
-                Console.WriteLine("Đoạn con tăng dần dài nhất có ít nhất 2 phần tử là:");
-                maxSubString.ShowList(); // Hiển thị đoạn con tăng dần dài nhất
-            }
-            else
-            {
-                Console.WriteLine("Không tìm thấy đoạn con tăng dần dài nhất có ít nhất 2 phần tử.");
-            }
+            maxSubString.ShowList();
         }
     }
 }

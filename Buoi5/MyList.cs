@@ -384,17 +384,16 @@ namespace k1enn
             return true;
         }
 
-        // Chèn node x sau node có giá trị lớn nhất và hoán đổi giá trị
+        // Bổ sung thêm
         public bool InsertXAfterMax(int x)
         {
             if (first == null) return false;
-            IntNode max = GetMax(); // Lấy node có giá trị lớn nhất
-            if (max == first) AddFirst(new IntNode(x)); // Nếu node lớn nhất là đầu
-            else
+            IntNode max = GetMax(); 
+            if (max == first) AddFirst(new IntNode(x)); 
             {
                 IntNode newNode = new IntNode(x);
-                AddAfterP(max, newNode); // Chèn x sau node lớn nhất
-                Swap(max, newNode); // Hoán đổi giá trị của max và x
+                AddAfterP(max, newNode);
+                Swap(max, newNode); 
             }
             return true;
         }
@@ -406,6 +405,17 @@ namespace k1enn
             int temp = x.Data;
             x.Data = y.Data;
             y.Data = temp;
+            return true;
+        }
+        
+        public bool InsertBeforeMax(int x)
+        {
+            if(first == null) return false;
+            IntNode max = GetMax();
+            if(max == first) AddFirst(new IntNode(x));
+            IntNode newNode = new IntNode(x);
+            AddAfterP(max, newNode);
+            Swap(max, newNode);
             return true;
         }
 
